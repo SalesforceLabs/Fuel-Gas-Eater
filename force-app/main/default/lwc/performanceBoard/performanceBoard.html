@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title="This Week - Contribution to CO2 Emission Reduction">
+        <lightning-button-icon 
+            onclick={clickedRefresh}
+            slot="actions" 
+            icon-name="utility:refresh"  
+            alternative-text="refresh" 
+            title="refresh"
+        ></lightning-button-icon>
+        <div class="slds-p-horizontal_small">
+            <lightning-layout>
+                <lightning-layout-item size="4" padding="around-small">
+                    <c-performance-board-item
+                        label="Total"
+                        current-value={totalReduceThisWeekValue}
+                        previous-value={totalReduceLastWeekValue}
+                    ></c-performance-board-item>
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <c-performance-board-item
+                        label="By Commute"
+                        current-value={commuteReduceThisWeekValue}
+                        previous-value={commuteReduceLastWeekValue}                    
+                    ></c-performance-board-item>
+                </lightning-layout-item>
+                <lightning-layout-item size="4" padding="around-small">
+                    <c-performance-board-item
+                        label="By Business Trip"
+                        current-value={activityReduceThisWeekValue}
+                        previous-value={activityReduceLastWeekValue}                    
+                    ></c-performance-board-item>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+
+    </lightning-card>
+</template>

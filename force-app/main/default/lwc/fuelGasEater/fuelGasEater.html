@@ -1,0 +1,49 @@
+<template>
+    <lightning-card title="My Fuel Gas Eater">
+      <lightning-button-icon 
+          onclick={clickedRefresh}
+          slot="actions" 
+          icon-name="utility:refresh"  
+          alternative-text="refresh" 
+          title="refresh"
+      ></lightning-button-icon>
+    <div style="padding:16px; background-color: #fff;">
+        
+        
+      <div style="padding:12px;text-align: center;">
+        <img src={fgeAvaterUrl} style="width:160px;"/>
+    </div>
+
+      <lightning-card title={level}>
+        <p slot="actions" class="slds-p-horizontal_small">More <span class="value-text"><lightning-formatted-number value={toNext}></lightning-formatted-number></span> kgCO2 meal for the upper stage</p>
+        <div class="slds-p-horizontal_small">
+          <lightning-progress-bar value={progressVal} size="small"></lightning-progress-bar>
+        </div>
+    </lightning-card>
+    <lightning-layout horizontal-align="spread">
+      <lightning-layout-item padding="around-small">
+        Ate meals this week  
+      </lightning-layout-item>
+      <lightning-layout-item padding="around-small">
+        <div>
+          <span class="value-text"><lightning-formatted-number value={totalReduceThisWeek}></lightning-formatted-number></span> kgCO2e
+        </div>
+      </lightning-layout-item>
+    </lightning-layout>
+
+    <lightning-layout horizontal-align="spread">
+      <lightning-layout-item padding="around-small">
+        Ate meals this fiscal year
+      </lightning-layout-item>
+      <lightning-layout-item padding="around-small">
+        <div>
+          <span class="value-text"><lightning-formatted-number value={totalReduceThisFiscalYear}></lightning-formatted-number></span> kgCO2e
+        </div>
+      </lightning-layout-item>
+    </lightning-layout>
+
+
+
+    </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,22 @@
+<template>
+    <div class="header-column">
+        <p class="field-title" title={label}>{label}</p>
+        <p><span class="number-h1">
+            <lightning-formatted-number value={currentValue}></lightning-formatted-number>
+            </span> kgCO2e
+        
+            <span class="trend-area" data-trend={trend}>
+                <lightning-dynamic-icon 
+                    type="trend" 
+                    option={trend} 
+                    alternative-text="Trending">
+                </lightning-dynamic-icon>
+                <span class="trend-value">{showRatio}</span>
+            </span>
+        </p>
+        <p style="color: #aaa">
+            <span style="font-size:1.5em;">
+                <lightning-formatted-number value={previousValue}></lightning-formatted-number></span> kgCO2e - Last week
+        </p>
+    </div>
+</template>

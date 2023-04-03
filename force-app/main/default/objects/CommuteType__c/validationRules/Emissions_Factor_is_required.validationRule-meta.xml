@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Emissions_Factor_is_required</fullName>
+    <active>true</active>
+    <errorConditionFormula>Zero_Emission__c != true &amp;&amp; Air_Travel_Emissions_Factor__c == null &amp;&amp; Ground_Travel_Emissions_Factor__c == null</errorConditionFormula>
+    <errorMessage>&quot;Air Travel Emissions Factor&quot; or &quot;Ground Travel Emissions Factor&quot; is required</errorMessage>
+</ValidationRule>

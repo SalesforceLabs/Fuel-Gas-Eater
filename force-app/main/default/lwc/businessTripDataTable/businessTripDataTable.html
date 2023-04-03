@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Detail">
+        <lightning-button-icon 
+            onclick={clickedRefresh}
+            slot="actions" 
+            icon-name="utility:refresh"  
+            alternative-text="refresh" 
+            title="refresh"
+        ></lightning-button-icon>
+        <lightning-datatable
+            key-field="id"
+            data={data}
+            columns={columns}
+            hide-checkbox-column>
+        </lightning-datatable>
+    </lightning-card>
+</template>

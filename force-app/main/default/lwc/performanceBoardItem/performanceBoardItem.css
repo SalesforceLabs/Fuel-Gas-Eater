@@ -1,0 +1,24 @@
+.number-h1 {
+    font-size: 2.25em;
+
+}
+
+.number-h2 {
+    font-size: 2.25em;
+}
+
+.trend-area {
+    padding-left:.75em;
+}
+.trend-area[data-trend="up"]{
+    color:rgb(46,132,74);
+}
+.trend-area[data-trend="down"]{
+    color:#ba0517;
+}
+.trend-area[data-trend="neutral"]{
+    color:rgb(147,147,147);
+}
+.trend-value {
+    padding-left:.5em;
+}

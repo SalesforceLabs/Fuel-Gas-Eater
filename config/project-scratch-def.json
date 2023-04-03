@@ -1,0 +1,17 @@
+{
+  "orgName": "Demo company",
+  "edition": "Partner Developer",
+  "features": ["EnableSetPasswordInApi","SustainabilityApp","RecordTypes","DevelopmentWave"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    },
+    "industriesSettings": {
+      "enableSCCarbonAccounting":true,
+      "enableSustainabilityCloud":true
+    }
+  }
+}

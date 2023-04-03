@@ -1,0 +1,21 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true,
+      "apexTestAccess": {
+        "permissionSets": [
+          "NetZeroAuditor",
+          "NetZeroManager",
+          "Fuel_Gas_Eater_User"
+        ],
+        "permissionSetLicenses": [
+          "NetZeroCloudUserPsl"
+        ]
+      }
+    }
+  ],
+  "name": "FuelGasEater",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "57.0"
+}
