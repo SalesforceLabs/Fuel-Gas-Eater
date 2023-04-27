@@ -7,7 +7,7 @@
     such as commuting and business trips. It runs with <b>Net Zero Cloud</b>.
   </p>
   <p>
-    This application is also published as a free managed package in <a href="https://appexchange.salesforce.com/">AppExchange</a>    
+    This application is also published as a free managed package in <a href="https://appexchange.salesforce.com/appxListingDetail?listingId=8adc53d0-d5b9-40e0-9683-66b594961fc5">AppExchange</a>    
   </p>
   <br/>
 </div>
